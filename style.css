@@ -1,0 +1,27 @@
+body html {
+  margin: 0;
+  padding: 0;
+}
+.jumbotron {
+  padding-top: 6rem;
+  /* background-repeat: no-repeat; */
+}
+
+.backgroundimg {
+  background-image: url(img/Gunung.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#projects {
+  background-color: #ffe652;
+}
+
+#footer {
+  background-color: #71dfe7;
+}
+
+section {
+  padding-top: 6rem;
+}
