@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -71,9 +74,9 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos iure eius aliquid aliquam corporis aut animi ullam nulla voluptatem?</p>
+            <p>JAWA 4 U adalah sebuah website yang dibuat oleh Kelompok 10 dari kelas XI RPL 3 yang beranggotakan S. Maulana Muhammad Rafid, Reyner Atira Prasetyo, Nicolaus Bintang Natanael, dan Afridho Nur Zaki.</p>
           </div>
-          <div class="col-md-4"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit exercitationem alias tempore dignissimos quae minus incidunt saepe ducimus iste?</p></div>
+          <div class="col-md-4"><p>JAWA 4 U ada untuk memenuhi kebutuhan bagi para Content Creator yang ingin mengembangkan Community dan Proyek yang ingin dikembangkannya bersama komunitas JAWA 4 U.</p></div>
         </div>
       </div>
     </section>
@@ -111,7 +114,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Nicholaus Bintang Nathanael</h5>
+                  <h5 class="card-title">Nicolaus Bintang Natanael</h5>
                   <p class="card-text">
                     <li>Proud Ace Combat Enjoyer</li>
                     <li>Sangat Gaming</li>
@@ -146,7 +149,7 @@
                   <h5 class="card-title">Afridho Nur Zaki</h5>
                   <p class="card-text">
                     <li>Genshin Impact Enjoyer (Aseli)</li>
-                    <li>Gatau mau isi apa lagi</li>
+                    <li>Certified Weeblet</li>
                   </p>
                 </div>
               </div>
@@ -234,20 +237,20 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form>
+            <form method="POST" action="insert.php">
               <div class="mb-3">
                 <label for="Email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" name ="email" />
               </div>
               <div class="mb-3">
                 <label for="Name" class="form-label">Full name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control" id="name" name ="name" />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <label for="Pesan" class="form-label">Message</label>
+                <textarea name="pesan" class="form-control" id="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" name="aksi" class="btn btn-primary">Submit</button>
             </form>
           </div>
         </div>
